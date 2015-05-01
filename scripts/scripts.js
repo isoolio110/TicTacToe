@@ -13,6 +13,15 @@ function nextMove(square) {
   square.innerText = document.turn;
 }
 
+function switchTurn(){
+  if (turn == "X") {
+    turn = "O"
+  } else {
+    turn = "X";
+  }
+}
+
+
 $(function(){
   startGame();
 })
