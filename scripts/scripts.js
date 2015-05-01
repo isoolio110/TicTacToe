@@ -8,3 +8,7 @@ function startGame() {
 function setMessage(msg){
   document.getElementById("message").innerText = msg;
 }
+
+$(function(){
+  startGame();
+})
