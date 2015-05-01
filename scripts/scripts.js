@@ -11,6 +11,7 @@ function setMessage(msg){
 
 function nextMove(square) {
   square.innerText = document.turn;
+  switchTurn();
 }
 
 function switchTurn(){
