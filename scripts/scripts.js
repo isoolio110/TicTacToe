@@ -27,6 +27,18 @@ function switchTurn(){
   setMessage("It's " + turn + "'s turn")
 }
 
+function checkRow(a,b,c,move){
+  var result = false;
+  if (getBox(a) == move && getBox(b) == move && getBox(b) == move) {
+    result = true;
+  } 
+  return result;
+}
+
+function getBox(number) {
+  document.getElementById("s" + number).innerText;
+}
+
 $(function(){
   startGame();
 })
