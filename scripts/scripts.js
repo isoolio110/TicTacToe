@@ -3,6 +3,9 @@ var winner
 
 function startGame() {
   turn = "X";
+  if (Math.randon() < 0.5) {
+    turn = "O";
+  }
   winner = null;
   setMessage(turn + " gets to start.");
 }
