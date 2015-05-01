@@ -2,6 +2,10 @@ body {
   background-color: #2FB0D8;
 }
 
+#title {
+  color: #375ACB;
+}
+
 #board-game {
   text-align: center;
 }
