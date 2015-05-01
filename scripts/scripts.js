@@ -12,7 +12,9 @@ function setMessage(msg){
 }
 
 function nextMove(square) {
-  if (square.innerText =="") {
+  if (document.winner != null) {
+    setMessage(document.winner + " already won the game.")
+  } else if (square.innerText =="") {
     square.innerText = turn;    
     switchTurn();
   } else {
@@ -30,7 +32,7 @@ function switchTurn(){
   } else {
     turn = "X";
     setMessage("It's " + turn + "'s turn");
-  }
+  }  
 }
 
 function checkForWinner(move){
