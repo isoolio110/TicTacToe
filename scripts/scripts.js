@@ -10,7 +10,7 @@ function setMessage(msg){
 }
 
 function nextMove(square) {
-  square.innerText = document.turn;
+  square.innerText = turn;
   switchTurn();
 }
 
