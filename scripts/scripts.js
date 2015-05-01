@@ -27,8 +27,7 @@ function switchTurn(){
   } else {
     turn = "X";
     setMessage("It's " + turn + "'s turn")
-  }
-  
+  }  
 }
 
 function checkForWinner(move){
@@ -55,7 +54,7 @@ function checkRow(a,b,c,move){
 }
 
 function getBox(number) {
-  document.getElementById("s" + number).innerText;
+  return document.getElementById("s" + number).innerText;
 }
 
 $(function(){
