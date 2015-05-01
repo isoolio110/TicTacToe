@@ -1,7 +1,9 @@
 var turn 
+var winner
 
 function startGame() {
   turn = "X";
+  winner = null;
   setMessage(turn + " gets to start.");
 }
 
