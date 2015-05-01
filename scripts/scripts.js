@@ -2,6 +2,9 @@ var turn
 var winner
 
 function startGame() {
+  for (var i = 1; i <= 9; i++){
+    clearBox(i);
+  }  
   turn = "X";
   if (Math.randon() < 0.5) {
     turn = "O";
