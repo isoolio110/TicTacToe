@@ -58,7 +58,7 @@ function checkForWinner(move){
 
 function checkRow(a,b,c,move){
   var result = false;
-  if (getBox(a) == move && getBox(b) == move && getBox(b) == move) {
+  if (getBox(a) == move && getBox(b) == move && getBox(c) == move) {
     result = true;
   } 
   return result;
