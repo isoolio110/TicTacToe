@@ -1,3 +1,7 @@
+body {
+  background-color: #F7F4FE;
+}
+
 table, td {
   border: 2px solid black;
 }
@@ -10,3 +14,5 @@ table, td {
   font-weight: bold;
   font-family: Verdana;
 }
+
+
