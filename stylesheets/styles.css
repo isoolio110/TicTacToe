@@ -3,7 +3,14 @@ body {
 }
 
 #title {
+  font-size: 3em;
   color: #375ACB;
+}
+
+#message {
+  margin-top: 1.5%;
+  font-size: 1.2em;
+  margin-bottom: 1.5%;
 }
 
 #board-game {
