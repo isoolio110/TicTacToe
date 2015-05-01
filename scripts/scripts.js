@@ -10,8 +10,12 @@ function setMessage(msg){
 }
 
 function nextMove(square) {
-  square.innerText = turn;
-  switchTurn();
+  if (square.innerText =="") {
+    square.innerText = turn;    
+    switchTurn();
+  } else {
+    setMessage("That square is already taken")
+  }
 }
 
 function switchTurn(){
@@ -20,8 +24,8 @@ function switchTurn(){
   } else {
     turn = "X";
   }
+  setMessage("It's " + turn + "'s turn")
 }
-
 
 $(function(){
   startGame();
