@@ -18,8 +18,8 @@ function setMessage(msg){
 }
 
 function nextMove(square) {
-  if (document.winner != null) {
-    setMessage(document.winner + " already won the game.")
+  if ( winner != null) {
+    setMessage( winner + " already won the game.")
   } else if (square.innerText =="") {
     square.innerText = turn;    
     switchTurn();
