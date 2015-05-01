@@ -29,3 +29,15 @@ table, td {
   font-size: 80px;
   font-family: Verdana;
 }
+
+#start-over {
+  display: block;
+  margin: 0 auto;
+  padding: 4px;
+  margin-top: 1.5%;  
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #3631E2;
+  border: 1px solid #fff;
+  width: 150px;
+}
