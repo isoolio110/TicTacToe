@@ -20,13 +20,15 @@ function nextMove(square) {
 
 function switchTurn(){
   if (checkForWinner(turn)){
-    setMessage("Congratulations, " + turn + "you win!")
+    setMessage("Congratulations, " + turn + " you win!")
   } else if (turn == "X") {
     turn = "O"
+    setMessage("It's " + turn + "'s turn")
   } else {
     turn = "X";
+    setMessage("It's " + turn + "'s turn")
   }
-  setMessage("It's " + turn + "'s turn")
+  
 }
 
 function checkForWinner(move){
