@@ -6,6 +6,7 @@ function startGame() {
     clearBox(i);
   }  
   turn = "X";
+
   if (Math.random() < 0.5) {
     turn = "O";
   }
@@ -21,6 +22,11 @@ function nextMove(square) {
   if ( winner != null) {
     setMessage( winner + " already won the game.")
   } else if (square.innerText =="") {
+    if (turn === "X") {
+      $(square).css("color", "#318AE2"); 
+    } else {
+      $(square).css("color", "#375ACB");
+    }
     square.innerText = turn;    
     switchTurn();
   } else {
