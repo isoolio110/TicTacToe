@@ -19,7 +19,9 @@ function nextMove(square) {
 }
 
 function switchTurn(){
-  if (turn == "X") {
+  if (checkForWinner(turn)){
+    setMessage("Congratulations, " + turn + "you win!")
+  } else if (turn == "X") {
     turn = "O"
   } else {
     turn = "X";
